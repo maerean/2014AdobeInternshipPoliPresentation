@@ -444,11 +444,20 @@ a:focus {
     -o-transform:      translateZ(40px);
      transform:        translateZ(40px);
 
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+    -webkit-transition: 2.5s;
+    -moz-transition:    2.5s;
+    -ms-transition:     2.5s;
+    -o-transition:      2.5s;
+    transition:         2.5s;
+}
+
+#its-in-3d .threeD {
+    -webkit-transform: translateZ(-100px) rotateY(70deg) rotateX(70deg);
+    -moz-transform:    translateZ(-100px) rotateY(70deg) rotateX(70deg);
+    -ms-transform:     translateZ(-100px) rotateY(70deg) rotateX(70deg);
+    -o-transform:      translateZ(-100px) rotateY(70deg) rotateX(70deg);
+    transform:         translateZ(-100px) rotateY(70deg) rotateX(70deg);
+    color: Red;
 }
 
 #its-in-3d .have {
