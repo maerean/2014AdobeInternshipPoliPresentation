@@ -49,6 +49,24 @@
             right: 15%;
             z-index: 1000;
         }
+        .pressForNextSlide {
+            position: fixed;
+            bottom: 1em;
+            left: 5%;
+            font-size: 100%;
+            opacity: 0.5;
+
+            -webkit-transition: 1s;
+            -moz-transition:    1s;
+            -ms-transition:     1s;
+            -o-transition:      1s;
+            transition:         1s;
+        }
+        body.impress-on-step-1 .pressForNextSlide {
+            color: Red;
+            font-weight: bold;
+            bottom: 3em;
+        }
         .adobeName {
             font-weight: bold;
             color: Red;
@@ -156,6 +174,7 @@
 -->
 <body class="impress-not-supported">
     <img src="./resources/adobeLogoTopRight.jpg" class="adobeLogoTopRight" alt="logo"/>
+    <div class="pressForNextSlide" title="apasa tasta dreapta">apasa &#8594; pentru urmatorul slide</div>
 
 <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
@@ -257,7 +276,7 @@
             <li style="margin-bottom:1em;"><img src="resources/creativeCloudIcon.jpeg" class="icon"/> <a href="http://creativecloud.com/" target="_blank" class="adobeName">Creative Cloud</a></li>
             <li><img src="resources/marketingCloudIcon.png" class="icon"/> <a href="http://www.adobe.com/solutions/digital-marketing.html" target="_blank" class="adobeName">Marketing Cloud</a></li>
         </ul>
-        <div style="position:absolute;bottom:10%;right:5%;font-size:400%" title="apasa tasta dreapta" onclick="alert(this.title);">&#8677;</div>
+        <div style="position:absolute;bottom:10%;right:5%;font-size:400%" title="apasa tasta dreapta" onclick="alert(this.title);">&#8594;</div>
     </div>
 
     <!--
