@@ -37,7 +37,7 @@
         .pressForNextSlide {
             position: fixed;
             bottom: 1em;
-            left: 5%;
+            right: 5%;
             font-size: 100%;
             opacity: 0.5;
 
@@ -47,7 +47,7 @@
             -o-transition:      1s;
             transition:         1s;
         }
-        body.impress-on-step-1 .pressForNextSlide {
+        body.impress-on-step-1 .pressForNextSlide, body.impress-on-creative .pressForNextSlide {
             color: Red;
             font-weight: bold;
             bottom: 3em;
@@ -181,7 +181,7 @@
         </ul>
     </div>
 
-    <div class="step slide addPadding" data-x="2000" data-y="-1500">
+    <div id="creative" class="step slide addPadding" data-x="2000" data-y="-1500">
         <div class="title fs200">Pe cale de a fi celebre</div>
         <ul class="fs200">
             <li style="margin-bottom:1em;"><img src="resources/creativeCloudIcon.jpeg" class="icon"/> <a href="http://creativecloud.com/" target="_blank" class="adobeName">Creative Cloud</a></li>
